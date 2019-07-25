@@ -1,0 +1,231 @@
+#sidebarBg {
+    float: right;
+    width: 269px;
+    overflow: hidden;
+    box-shadow: 0 0 9px #000;
+    /* -moz-box-shadow: 0 0 9px #000; */
+    -webkit-box-shadow: 0 0 9px #000;
+    background-color: rgba(34, 34, 34, 0.9);
+    padding-top: 1px;
+    padding-bottom: 1px;
+    position: absolute;
+    height: 100%;
+    margin-left: 725px;
+    border-radius: 0px 6px 0px 0px;
+}
+
+body {
+    overflow-x: hidden;
+}
+.foa_bg_banner{
+    background-image: url(../../../images/bg/altbg.jpg);
+    height: 300px;
+    /*margin-left: 725px;*/
+    position: relative;
+    /*width: 100%;*/
+    background-attachment: fixed;
+    background-size: cover;
+    /*background-position: center center;*/
+}
+.pzdn_fc {
+    background-image: url("../../../images/bg/altbg.jpg");
+    height: 100%;
+    margin-left: 725px;
+    position: absolute;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    /*background-position: center center;*/
+}
+
+.pzdn_fc > a {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+#sidebarExtra {
+    float: right;
+    width: 28%;
+    /*overflow: hidden;*/
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.sidebarSpace {
+    padding: 16px;
+    position: relative;
+}
+
+.sidebarStat {
+    background: url("../images/column_bg2.gif") no-repeat scroll center top;
+    padding-left: 16px;
+    padding-top: 60px;
+    position: relative;
+    height:600px;
+}
+
+#mainwrap .row {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#mainNew {
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    /* padding-top: 30px; */
+}
+
+.itemid1 #mainNew{
+    overflow: visible;
+    position: relative;
+}
+
+#sidebarExtra + #mainNew {
+    width: 70%;
+}
+
+#main-inner {
+    position: relative;
+}
+
+
+/* new clearfix */
+
+.container:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+    width: 1000px;
+}
+
+/*
+* html ..container {
+    zoom: 1;
+}
+*/
+
+/* IE6 */
+
+/*
+*:first-child+html .container {
+    zoom: 1;
+}
+*/
+
+/* IE7 */
+
+.container .container {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+#maincontainer {
+    padding-top: 0;
+}
+
+.moduletable.togglelogo {
+    display: none;
+    visibility: hidden;
+}
+
+#zenpanelInner a#zenpanelclose2 {
+    float: right;
+    margin-right: 10px;
+}
+
+
+/* Footer - 3 column
+-----------------------------------------------------------------------------*/
+
+
+.footer_column{
+   float: left;
+   width: 25%;
+   text-align: left;
+
+}
+
+.footer_menu{
+   margin:0 auto;
+   width: 75.00%;
+   clear:both;
+   font-family:Oswald;
+   color:#777777;
+   font-size:14px;
+   line-height:28px;
+
+}
+
+.footer_menu h3{
+  margin:0 auto;
+  display:block;
+
+
+}
+.login #mainwrap{
+    max-width: 700px;
+}
+/* @MEDIA !!!!
+-----------------------------------------------------------------------------*/
+
+@media screen and (max-width: 1000px) {
+    #sidebarExtra {
+        display: none;
+    }
+    #mainNew {
+        width: 100% !important;
+    }
+    #nav {}
+
+    .footer_column{
+       width: 50%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #sidebarBg {
+        display: none;
+    }
+    #mainNew {
+        width: 100% !important;
+    }
+    .menumenu{
+        display: none;
+    }     
+    .itemid1 .notif_msg{
+        width: initial;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .moduletable.mainlogo {
+        display: none !important;
+    }
+    .moduletable.togglelogo {
+        display: block !important;
+        visibility: visible !important;
+    }
+    #nav {
+        float: none;
+    }
+
+    .footer_column{
+       width: 100%;
+    }
+    .topSearch{
+        /* display: none !important; */
+    }
+}
+
+@media only screen and (min-width: 1001px) {
+    #togglemenu{
+        display: none !important;
+    }
+}
+
