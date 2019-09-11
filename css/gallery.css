@@ -33,7 +33,7 @@ ul.gallery-row li {
  float: left;
  width: 32%;
  height: auto;
- padding: 0 1.5% 0 0;
+ padding 1.5%;
 }
 .widget .post-body li {
  margin-bottom: 15px !important;
