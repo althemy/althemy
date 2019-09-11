@@ -53,7 +53,7 @@ text-align: center;
 @media only screen and (max-width: 800px) {
 ul.gallery-row li {
  width: 48.5%;
- padding: 0 1.5% 0 0;
+ padding: 1.5%;
 }
 ul.gallery-row li:nth-child(3n) {
  padding-right: 1.5%;
