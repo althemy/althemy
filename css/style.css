@@ -3,6 +3,7 @@ a,acronym,b,body,canvas,caption,center,code,dfn,div,figcaption,figure,footer,for
     padding:0;
     list-style:none
 }
+
 figcaption,figure,footer,menu,nav,section{
     display:block
 }
