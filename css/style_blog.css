@@ -292,8 +292,8 @@ span.widget-item-control {
 }
 
 .sidebar-stats {
-  background: url(https://althemy.github.io/althemy/images/column_bg2.gif)
-    no-repeat scroll top center;
+  background: url(https://althemy.github.io/althemy/images/column_bg2.gif);
+  no-repeat scroll top center;
   position: relative;
   padding: 100px 35px;
   height: 600px;
