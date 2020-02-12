@@ -178,7 +178,7 @@ body.right .container {
   width: 130px;
   height: 130px;
   background: transparent
-    url(https://lh3.googleusercontent.com/-zu6IBteT-w0/XU-cMDeTSFI/AAAAAAAAAQ8/8UsogUCaA2wV_tGfJKbDI3Z6SKt4zR1RgCLcBGAs/h120/loading.gif)
+    url(https://althemy.github.io/althemy/images/elements/loading.gif)
     no-repeat 0 0;
   position: relative;
   background-size: 50%;
@@ -373,7 +373,7 @@ body.right .container {
 }
 .dj-mtmenu li a.dj-up_a span.dj-drop {
   background: transparent
-    url(https://lh3.googleusercontent.com/-_9kax8gtAR8/XU-cv6HLqqI/AAAAAAAAARI/ukvFzDyzBG8l0jszl9jWaerdiPuI8gDdACLcBGAs/h120/menu-arrow.gif)
+    url(https://althemy.github.io/althemy/images/elements/menu-arrow.gif)
     no-repeat scroll 100% 17px;
   display: block;
   float: left;
@@ -397,7 +397,7 @@ body.right .container {
 }
 .dj-mtmenu li.dj-up > ul:before {
   content: "";
-  background: url(https://lh3.googleusercontent.com/-9TP16vbEHbk/XU-cvypsf4I/AAAAAAAAARE/LGNEbRnXDtEa5GKUHBzbzq4Wwkj4L7kZwCLcBGAs/s200/menu-circle.png)
+  background: url(https://althemy.github.io/althemy/images/elements/menu-circle.png)
     no-repeat;
   position: absolute;
   right: 0;
@@ -592,7 +592,7 @@ a {
   z-index: 9;
 }
 .foa_bg {
-  background-image: url(https://lh3.googleusercontent.com/-qMWVb4JPf2U/XVHcRrtpjdI/AAAAAAAAASA/xgKWKM60f-kGk435xuWIuViY6RNJf6umQCLcBGAs/s1600/altbg.jpg);
+  background-image: url(https://althemy.github.io/althemy/images/covers/altbg.jpg);
   top: -10%;
 }
 .jbmoduleBody .left,
@@ -656,7 +656,7 @@ a.toggleSearch {
 #navwrap ul li.parent li.parent span,
 #navwrap ul li.parent span.mainlevel {
   background: transparent
-    url(http://www.althemy.com/templates/CyberSkin/images/menu/navParent.png)
+    url(https://althemy.github.io/althemy/images/elements/navParent.png)
     no-repeat scroll 100% 53%;
 }
 #navwrap ul li.parent li.parent span {
@@ -787,7 +787,7 @@ a.toggleSearch {
 }
 #banner .zentext,
 #banner h2 {
-  background: url(http://www.althemy.com/templates/CyberSkin/images/overlay/blackOverlay.png);
+  background: url(https://althemy.github.io/althemy/images/elements/blackOverlay.png);
   text-align: center;
   padding: 0 8px;
   margin-left: 3%;
@@ -885,7 +885,7 @@ a.toggleSearch {
 }
 ul#filters {
   background: transparent
-    url(http://www.althemy.com/templates/CyberSkin/images/bg_filter.png) scroll
+    url(https://althemy.github.io/althemy/images/elements/bg_filter.png) scroll
     0 0;
   margin: 0 0 20px;
   padding: 10px 0 0;
@@ -1011,7 +1011,7 @@ input[type="checkbox"] {
   z-index: 11;
 }
 h3.close {
-  background: url(http://www.althemy.com/templates/CyberSkin/images/menu/menuOpen.png)
+  background: url(https://althemy.github.io/althemy/images/elements/menuOpen.png)
     no-repeat 0;
   text-indent: 20px;
   display: block;
@@ -1029,7 +1029,7 @@ h3.open span {
   background-position: 8px;
 }
 h3.close span {
-  background-image: url(http://www.althemy.com/templates/CyberSkin/images/menu/menuOpenDown.png);
+  background-image: url(https://althemy.github.io/althemy/images/elements/menuOpenDown.png);
   text-indent: 30px;
 }
 .com_content.category h2 {
@@ -1225,7 +1225,7 @@ input.button {
 .foa_bg {
   width: 100%;
   height: 100vh;
-  background-image: url(https://lh3.googleusercontent.com/-qMWVb4JPf2U/XVHcRrtpjdI/AAAAAAAAASA/xgKWKM60f-kGk435xuWIuViY6RNJf6umQCLcBGAs/s1600/altbg.jpg);
+  background-image: url(https://althemy.github.io/althemy/images/covers/altbg.jpg);
   background-color: #000;
   background-repeat: no-repeat;
   position: fixed;
@@ -1257,7 +1257,7 @@ input.button {
 .joms-newsfeed-more {
   -webkit-border-radius: 4px;
   background: #f4f5f6
-    url(https://lh3.googleusercontent.com/-K1EyVl5iW0E/XVHm-1kt8KI/AAAAAAAAASY/3QPgNWwulK4KJc3UoonH2CB6Aq2ZfteWwCLcBGAs/h120/load-more-btn.png)
+    url(https://althemy.github.io/althemy/images/elements/load-more-btn.png)
     repeat-x 0 0;
   border: 1px solid #999;
   border-radius: 4px;
@@ -1683,12 +1683,12 @@ body {
   height: 30px;
   right: -15px;
   top: -15px;
-  background: url(https://lh3.googleusercontent.com/-V97RAlge6bs/XU-dZw0Y4fI/AAAAAAAAARY/vIF2rbAC3zsD8T0vFwRohHpKx7utO-SWACLcBGAs/h120/closebox.png)
+  background: url(https://althemy.github.io/althemy/images/elements/closebox.png)
     no-repeat 0 0;
   border: none;
 }
 .sbox-loading #sbox-content {
-  background-image: url(https://lh3.googleusercontent.com/-ZoW4giZARU8/XU-dZz25yOI/AAAAAAAAARc/q1d9qZPHIm4_js43BjUTHQmq2KKOd0TZQCLcBGAs/h120/spinner.gif);
+  background-image: url(https://althemy.github.io/althemy/images/elements/spinner.gif);
   background-repeat: no-repeat;
   background-position: 50%;
 }
@@ -2057,7 +2057,7 @@ body .mfp-bottom-bar {
   width: 130px;
   height: 130px;
   background: transparent
-    url(https://lh3.googleusercontent.com/-zu6IBteT-w0/XU-cMDeTSFI/AAAAAAAAAQ8/8UsogUCaA2wV_tGfJKbDI3Z6SKt4zR1RgCLcBGAs/h120/loading.gif)
+    url(https://althemy.github.io/althemy/images/elements/loading.gif)
     no-repeat 0 0;
   position: absolute;
   left: 40%;
