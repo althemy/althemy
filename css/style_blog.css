@@ -1,3 +1,67 @@
+
+/* Gallery on Blog pages */
+/* https://www.w3schools.com/howto/howto_js_image_grid.asp */
+/* Create two equal columns that sits next to each other */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  
+}
+
+.header_gallery {
+  text-align: center;
+  padding: 32px;
+  margin: 0 auto;
+  display: table;
+}
+
+.row_gallery {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column_gallery {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column_gallery img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Style the buttons */
+.btn_gallery {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+  height: 45px !important;
+}
+
+.btn_gallery:hover {
+  background-color: #ddd;
+}
+
+.btn_gallery.active {
+  background-color: #666;
+  color: white;
+}
+
+/* https://www.w3schools.com/howto/howto_js_image_grid.asp */
+/* Create two equal columns that sits next to each other */
+
+/* Blog - SingleItem Style */
 .card {
   background: #fff;
   border: 1px solid #e0e0e0;
@@ -372,3 +436,4 @@ span.widget-item-control {
     margin-top: 20px;
   }
 }
+/* Blog - SingleItem Style */
