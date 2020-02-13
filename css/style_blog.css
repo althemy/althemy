@@ -2,7 +2,10 @@
 /* Gallery on Blog pages */
 /* https://www.w3schools.com/howto/howto_js_image_grid.asp */
 /* Create two equal columns that sits next to each other */
+/* Blogger Responsive Image Gallery by Georgia Lou Studios, http://pedroluisf.com/demos/bloggergallery/ -->*/
 
+
+<!-- Start Gallery Code -->
 * {
   box-sizing: border-box;
 }
