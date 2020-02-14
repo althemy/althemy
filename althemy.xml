@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
-<html b:css='false' xmlns='https://www.w3.org/1999/xhtml' xmlns:b='https://www.google.com/2005/gml/b' xmlns:data='https://www.google.com/2005/gml/data' xmlns:expr='https://www.google.com/2005/gml/expr'>
+<html b:css='false' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
   <head>
 
     <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0' name='viewport'/>
@@ -25,9 +25,22 @@
 <b:if cond='data:view.isSingleItem'>
    <link href='https://althemy.github.io/althemy/css/style_blog.css' rel='stylesheet' type='text/css'/>
 </b:if>
+
+
+
+<b:if cond='data:blog.searchLabel == "@Dante Heks"'>
+<style type='text/css'>
+.foa_bg {
+  background-image: url(https://althemy.github.io/althemy/images/covers/danteheks_altbg.jpg);
+  
+}
+</style>
+</b:if> 
     
   </head>
   <body>
+
+
 
     <div class='fullwrap togglemenu'>
 
@@ -236,7 +249,6 @@
       </div>
     </div>
 
-
     <div id='maincontainer'>
       <div id='main-inner'>
 
@@ -367,7 +379,7 @@
                                             <div class='zencategory element1 firstitem mfp-prevent-close'>
                                               <div class='sitelink mfp-prevent-close'>
                                                 <a class='mfp-prevent-close' expr:href='&quot;/search/label/&quot; + data:post.labels[0].name + &quot;?max-results=25#filters&quot;'>
-                                                  <b:with value='data:post.authorPhoto.url ?: &quot;https://2.bp.blogspot.com/-GfFjD8etS2E/UTPve4mQdYI/AAAAAAAAC7k/gy0DVRlx4xM/s40/anonymous-Icon.jpg&quot;' var='image'>
+                                                  <b:with value='data:post.authorPhoto.url ?: &quot;https://althemy.github.io/althemy/images/elements/anonymous-Icon.jpg&quot;' var='image'>
                                                     <img class='mfp-prevent-close' expr:src='data:image'/>
                                                   </b:with>
                                                   <data:post.author/>
