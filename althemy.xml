@@ -28,14 +28,19 @@
 
 
 
-<b:if cond='data:blog.searchLabel == "@Dante Heks"'>
+
+
+<b:if cond='data:blog.searchLabel in ["@Dante Heks","@Dante Heks+Photo","@Dante Heks+Blog","@Dante Heks+Video","@Dante Heks+Product"]'>
 <style type='text/css'>
 .foa_bg {
   background-image: url(https://althemy.github.io/althemy/images/covers/danteheks_altbg.jpg);
-  
 }
 </style>
-</b:if> 
+</b:if>
+
+
+
+
     
   </head>
   <body>
