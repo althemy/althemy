@@ -2396,5 +2396,6 @@ body .mfp-bottom-bar {
   height: 0;
 }
 
-.blur { filter: blur(8px);
+.blur { 
+  filter: blur(40px);
 }
