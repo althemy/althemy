@@ -595,6 +595,9 @@ a {
   background-image: url(https://althemy.github.io/althemy/images/covers/altbg.jpg);
   top: -10%;
 }
+.blur {
+      filter: blur(50px);
+]
 .jbmoduleBody .left,
 .moduletable-foabg .left,
 .togglemenu .left {
