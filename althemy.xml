@@ -39,19 +39,10 @@
 </style>
 </b:if>
 
- 
-<b:if cond='data:post.author == &quot;MapleDesigns&quot;'>
-<style type='text/css'>
-.foa_bg {
-  background-image: url(https://althemy.github.io/althemy/images/covers/danteheks_altbg.jpg);
-}
-</style>
-</b:if>
 
    
   </head>
   <body>
-
 
 
     <div class='fullwrap togglemenu'>
@@ -66,7 +57,7 @@
                   <div class='moduletable mainlogo'>
                     <div class='jbmoduleBody'>
                       <p>
-                        <a href='/' title='CyberCity Society'>
+                        <a href='/' title='Althemy Community and Marketplace'>
                           <img alt='Althemy - Alter Alchemy' height='45' src='https://althemy.github.io/althemy/images/elements/althemy-logo.png' title='Althemy - Alter Alchemy' width='150'/>
                         </a>
                       </p>
@@ -266,6 +257,17 @@
 
         <div class='moduletable-foabg'>
           <div class='jbmoduleBody'>
+
+        <b:if cond='data:view.isSingleItem'>
+                <div class='foa_bg right'>
+                       <b:if cond='data:view.featuredImage'>
+                               &lt;style&gt;
+                              .foa_bg{background-image:url(<b:eval expr='data:view.featuredImage resizeImage 1600'/>)}
+                               &lt;/style&gt;
+                        </b:if>
+                  </div>
+            </b:if>
+
             <div class='foa_bg right'>
             </div>
             <a class='foa_link' href='https://althemy.blogspot.com/danteheks'>Dante Heks - Face of Althemy for Autumn 2018 </a>     
