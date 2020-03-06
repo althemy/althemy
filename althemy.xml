@@ -30,7 +30,8 @@
 
 
 
-<b:if cond='data:blog.searchLabel in ["@Dante Heks","@Dante Heks+Photo","@Dante Heks+Blog","@Dante Heks+Video","@Dante Heks+Product"]'>
+<b:if cond='data:blog.searchLabel in [&quot;@Dante Heks&quot;,&quot;@Dante Heks+Photo&quot;,&quot;@Dante Heks+Blog&quot;,&quot;@Dante Heks+Video&quot;,&quot;@Dante Heks+Product&quot;]'>
+
 <style type='text/css'>
 .foa_bg {
   background-image: url(https://althemy.github.io/althemy/images/covers/danteheks_altbg.jpg);
@@ -38,10 +39,16 @@
 </style>
 </b:if>
 
+ 
+<b:if cond='data:post.author == &quot;MapleDesigns&quot;'>
+<style type='text/css'>
+.foa_bg {
+  background-image: url(https://althemy.github.io/althemy/images/covers/danteheks_altbg.jpg);
+}
+</style>
+</b:if>
 
-
-
-    
+   
   </head>
   <body>
 
