@@ -2395,3 +2395,6 @@ body .mfp-bottom-bar {
 .zenprice {
   height: 0;
 }
+
+.blur { filter: blur(8px);
+}
