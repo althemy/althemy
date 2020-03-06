@@ -594,6 +594,7 @@ a {
 .foa_bg {
   background-image: url(https://althemy.github.io/althemy/images/covers/altbg.jpg);
   top: -10%;
+  filter: blur(40px);
 }
 .jbmoduleBody .left,
 .moduletable-foabg .left,
@@ -2396,6 +2397,3 @@ body .mfp-bottom-bar {
   height: 0;
 }
 
-.blur { 
-  filter: blur(40px);
-}
