@@ -27,11 +27,7 @@
 </b:if>
 
 
-
-
-
 <b:if cond='data:blog.searchLabel in [&quot;@Dante Heks&quot;,&quot;@Dante Heks+Photo&quot;,&quot;@Dante Heks+Blog&quot;,&quot;@Dante Heks+Video&quot;,&quot;@Dante Heks+Product&quot;]'>
-
 <style type='text/css'>
 .foa_bg {
   background-image: url(https://althemy.github.io/althemy/images/covers/danteheks_altbg.jpg);
@@ -40,7 +36,6 @@
 </b:if>
 
 
-   
   </head>
   <body>
 
@@ -234,7 +229,7 @@
             <div id='banner' style='width:100%'>
               <div class='moduletable'>
                 <div class='jbmoduleBody'>
-                  <div class='moduletable leading_foa' ondblclick='window.location.href = &apos;https://althemy.blogspot.com/danteheks&apos;;'>
+                  <div class='moduletable leading_foa' ondblclick='window.location.href = &apos;https://althemy.blogspot.com/search/label/@Dante%20Heks?max-results=25#filters&apos;;'>
                     <b:if cond='!data:view.isSingleItem'>
                       <div class='g_list'>
                         <h2>Community &amp; Marketplace</h2>
@@ -258,19 +253,9 @@
         <div class='moduletable-foabg'>
           <div class='jbmoduleBody'>
 
-        <b:if cond='data:view.isSingleItem'>
-                <div class='foa_bg right'>
-                       <b:if cond='data:view.featuredImage'>
-                               &lt;style&gt;
-                              .foa_bg{background-image:url(<b:eval expr='data:view.featuredImage resizeImage 1600'/>)}
-                               &lt;/style&gt;
-                        </b:if>
-                  </div>
-            </b:if>
-
             <div class='foa_bg right'>
             </div>
-            <a class='foa_link' href='https://althemy.blogspot.com/danteheks'>Dante Heks - Face of Althemy for Autumn 2018 </a>     
+            <a class='foa_link' href='https://althemy.blogspot.com/search/label/@Dante%20Heks?max-results=25#filters'>Dante Heks - Face of Althemy for Autumn 2018 </a>     
           </div>
         </div>
 
@@ -303,9 +288,6 @@
                               </li>
                               <li class='productsID' data-label='Product'>
                                 <a expr:class='data:view.search.label == &quot;Product&quot; ? &quot;active&quot; : &quot;&quot;' href='/search/label/Product?view=home&amp;max-results=25#filters'><span>Product</span></a>
-                              </li>
-                              <li class='journalID' data-label='Journal'>
-                                <a expr:class='data:view.search.label == &quot;Journal&quot; ? &quot;active&quot; : &quot;&quot;' href='/search/label/Journal?view=home&amp;max-results=25#filters'><span>Journal</span></a>
                               </li>
                             </ul>
                           </b:if>
@@ -383,7 +365,7 @@
                                 </b:if>
                               </b:includable>
                               <b:includable id='index' var='post'>
-                                <b:with value='data:post.labels filter (l =&gt; l.name in [&quot;Photo&quot;, &quot;Video&quot;, &quot;Blog&quot;, &quot;Journal&quot;, &quot;Product&quot;])' var='labels'>
+                                <b:with value='data:post.labels filter (l =&gt; l.name in [&quot;Photo&quot;, &quot;Video&quot;, &quot;Blog&quot;, &quot;Product&quot;])' var='labels'>
                                   <b:with value='data:labels[0].name' var='label'>
                                     <li class='grid_6 element mfp-prevent-close'>
                                       <b:class cond='data:post.labels any (l =&gt; l.name == &quot;Featured&quot;)' name='featured'/>
@@ -531,7 +513,6 @@
                                     </div>
                                   </div>
                                 </div>
-
                               </b:includable>
                               <b:includable id='postQuickEdit' var='post'/>
                               <b:includable id='shareButtons' var='post'/>
@@ -598,7 +579,6 @@
                               </b:includable>
                             </b:widget>
                           </b:section>
-
                         </div>
                       </div>
                     </div>
@@ -730,7 +710,7 @@
                             <b:widget-setting name='link-2'>#</b:widget-setting>
                             <b:widget-setting name='text-3'>Support</b:widget-setting>
                             <b:widget-setting name='link-0'>#</b:widget-setting>
-                            <b:widget-setting name='text-2'>Journal</b:widget-setting>
+                            <b:widget-setting name='text-2'>Authors</b:widget-setting>
                           </b:widget-settings>
                           <b:includable id='main'>
 
