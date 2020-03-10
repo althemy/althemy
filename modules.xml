@@ -1,0 +1,33 @@
+<!-- Image bacground on author page from blog post-->   
+LINE:268
+	   <b:if cond='data:view.isSingleItem'>
+                <div class='foa_bg right'>
+                       <b:if cond='data:view.featuredImage'>
+                               &lt;style&gt;
+                              .foa_bg{background-image:url(<b:eval expr='data:view.featuredImage resizeImage 1600'/>);
+                               filter: blur(5px);
+                              }
+                               &lt;/style&gt;
+                        </b:if>
+                  </div>
+            </b:if>
+
+            <div class='foa_bg right'>
+	
+<!-- Image bacground on author page  from Github Version1-->   
+<b:if cond='data:post.author == &quot;MapleDesigns&quot;'>
+<style type='text/css'>
+.foa_bg {
+  background-image: url(https://althemy.github.io/althemy/images/covers/danteheks_altbg.jpg);
+}
+</style>
+</b:if>
+
+<!-- Image bacground on author page  from Github Version2--> 
+<b:if cond='data:displayname == "MapleDesigns"'> 
+<style type='text/css'>
+.foa_bg {
+  background-image: url(https://althemy.github.io/althemy/images/covers/danteheks_altbg.jpg);
+}
+</style>
+</b:if>
