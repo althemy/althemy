@@ -409,6 +409,7 @@ body.right .container {
   color: #fff;
   display: block;
   padding: 5px 0;
+  position: relative;
 }
 .dj-mtmenu li.dj-up > ul a:hover {
   color: #3dd7f3;
