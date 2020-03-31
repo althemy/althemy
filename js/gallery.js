@@ -97,27 +97,6 @@ $(document).ready(function(){
       recalculateMasonry('25%');
       $(this).addClass('active');
     });
-    
-    var winWidth = $(window).width();
-    var topMenu = '';
-
-    if (winWidth < 768) {
-      $('.moduletablemenu a').each(function(){
-        var $this = $(this),
-            href = $this.attr('href'),
-            text = $this.text().toLowerCase();
-
-        topMenu += '<li class="dj-up"><a class="dj-up_a" href="'+ href +'"><span class="dj-drop">'+ text +'</span></a></li>';
-      });
-
-      $('.dj-mtmenu').prepend(topMenu);
-
-      $('.dj-mtmenu .dj-up').each(function(){
-        if($(this).has('ul').length) {
-          $(this).addClass('has-children').children('a').after('<i class="fa fa-plus expand-submenu"></i>');
-        }
-      });
-    }
 
   }
 });
