@@ -777,6 +777,15 @@ a.toggleSearch {
   min-height: 50px;
   margin-right: 20px;
 }
+.dj-up.has-children {
+  display: flex!important;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.dj-up.has-children i {
+  color: #FFF;
+}
 #bannerwrap,
 #bannerwrap .slides {
   max-height: none;
@@ -2263,7 +2272,8 @@ body .mfp-bottom-bar {
   .dj-mtmenu {
     padding: 10px 30px;
     margin: 0;
-    width: 91%;
+    width: 100%;
+    box-sizing: border-box;
   }
   .dj-mtmenu li.dj-up,
   .dj-mtmenu li.dj-up a {
@@ -2278,6 +2288,7 @@ body .mfp-bottom-bar {
     left: auto;
     top: auto;
     background: none;
+    width: 100%;
   }
   .dj-mtmenu li.dj-up > ul a {
     color: #9a9a9a;
