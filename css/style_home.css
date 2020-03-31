@@ -2271,6 +2271,7 @@ body .mfp-bottom-bar {
   }
   .dj-mtmenu li a.dj-up_a span.dj-drop {
     background: none;
+    text-transform: capitalize;
   }
   .dj-mtmenu li.dj-up > ul {
     position: relative;
