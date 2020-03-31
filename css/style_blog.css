@@ -490,7 +490,7 @@ span.widget-item-control {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 32%;
   flex: 1 1 32%;
-  padding: 13px;
+  padding: 10px;
 }
 
 .static-page .grid-item figcaption {
@@ -518,7 +518,7 @@ span.widget-item-control {
   background-repeat: repeat-y;
   position: relative;
   background-size: 94%;
-  width: 104%;
+  width: 100%;
 }
 
 .static-page .grid-item figure img {
@@ -537,11 +537,11 @@ span.widget-item-control {
     width: 50%;
   }
   .static-page .grid-item {
-    min-width: 49%;
-    max-width: 49%;
+    min-width: 50%;
+    max-width: 50%;
     -webkit-box-flex: 1;
-    -ms-flex: 1 1 49%;
-    flex: 1 1 49%;
+    -ms-flex: 1 1 50%;
+    flex: 1 1 50%;
   }
 }
 
