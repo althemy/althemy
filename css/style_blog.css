@@ -365,66 +365,30 @@ span.widget-item-control {
 
 /* FAQ Page Desigh start  */
 /* ------------------------------------------------------------------------------------------------------------ */
-.faq-content {
-  margin: 0 auto 80px;
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
 }
-.faq-question {
-  padding: 8px 0;
-  border-bottom: 1px dotted #ccc;
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
 }
-.panel-title {
-    font-size: 20px;
-    width: 100%;
-    position: relative;
-    margin: 0;
-    padding: 8px 5px 0 75px;
-    display: block;
-    cursor: pointer;
-}
-.panel-content {
-  font-size: 17px;
-  padding: 0px 14px;
-  margin: 0 40px;
-  height: 0;
-  overflow: hidden;
-  position: relative;
-  opacity: 0;
-  -webkit-transition: .4s ease;
-  -moz-transition: .4s ease;
-  -o-transition: .4s ease;
-  transition: .4s ease;
- color: #2a8eb2
-}
-.panel:checked ~ .panel-content{
-  height: auto;
-  opacity: 1;
-  padding: 14px;
-}
-.plus {
-  position: absolute;
-  margin-left: 20px;
-  margin-top: 4px;
-  z-index: 5;
-  font-size: 42px;
-  line-height: 100%;
-  -webkit-user-select: none;    
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-  -webkit-transition: .2s ease;
-  -moz-transition: .2s ease;
-  -o-transition: .2s ease;
-  transition: .2s ease;
-}
-.panel:checked ~ .plus {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
+
+/* Style the accordion panel. Note: hidden by default */
 .panel {
+  padding: 0 18px;
+  background-color: white;
   display: none;
+  overflow: hidden;
 }
 /* FAQ Page Desigh the end  */
 /* ------------------------------------------------------------------------------------------------------------ */
