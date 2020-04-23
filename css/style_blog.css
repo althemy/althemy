@@ -344,14 +344,12 @@ span.widget-item-control {
 
 /* FAQ Page Desigh start  */
 /* ----------------------------------------------------------------------------------------------------------------  */
-faq {
+.faq-content {
+  margin: 0 auto;
   color: #333;
   background: #fcfcfc;
   font-family: 'Raleway', sans-serif;
   overflow-x: hidden;
-}
-.faq-content {
-  margin: 0 auto;
 }
 .faq-question {
   padding: 20px 0;
@@ -390,7 +388,7 @@ faq {
   margin-left: 20px;
   margin-top: 4px;
   z-index: 5;
-  font-size: 30px;
+  font-size: 42px;
   line-height: 100%;
   -webkit-user-select: none;    
   -moz-user-select: none;
