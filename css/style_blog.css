@@ -364,6 +364,7 @@ span.widget-item-control {
 }
 
 /* FAQ Page Desigh start  */
+/* ------------------------------------------------------------------------------------------------------------ */
 .faq-content {
   margin: 0 auto 80px;
 }
@@ -426,8 +427,9 @@ span.widget-item-control {
   display: none;
 }
 /* FAQ Page Desigh the end  */
-
+/* ------------------------------------------------------------------------------------------------------------ */
 /* Authors Page Desigh start  */
+/* ------------------------------------------------------------------------------------------------------------ */
 .auth-wrapper {
 	margin: 40px auto;
 }
@@ -483,8 +485,9 @@ p.auth-attribution a {
 	}
 }
 /* Authors Page Desigh the end  */
-
+/* ------------------------------------------------------------------------------------------------------------ */
 /* Authors Page Balloon start  */
+/* ------------------------------------------------------------------------------------------------------------ */
 [aria-label][data-balloon-pos] {
   position: relative;
   cursor: pointer; 
@@ -570,7 +573,7 @@ p.auth-attribution a {
     white-space: normal;
     width: 100%; }
 /* Authors Page Balloon the end  */
-
+/* ------------------------------------------------------------------------------------------------------------ */
 @media screen and (max-width: 1024px) {
   #grid2wrap .container .inner,
   #grid2wrap .container .grid2wrap {
