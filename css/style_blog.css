@@ -483,6 +483,10 @@ p.auth-attribution a {
 		list-style-type: none;
 		margin: 0;
 	}
+	div.auth-gallery ul li {
+	width: 95px;
+	height: 100px;
+}
 }
 /* Authors Page Desigh the end  */
 /* ------------------------------------------------------------------------------------------------------------ */
