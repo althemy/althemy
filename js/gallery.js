@@ -75,6 +75,12 @@ $(document).ready(function(){
         '</div>'
       },
 
+      callbacks: {
+        imageLoadComplete: function () {
+          $(".mfp-img").orThemesZoom();
+        },
+      }
+
     });
 
     $('#grid_one').on('click', function(e){
