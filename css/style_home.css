@@ -1737,7 +1737,7 @@ body {
   z-index: 1043;
   outline: none !important;
   -webkit-backface-visibility: hidden;
-  overflow: scroll !important;
+  overflow: auto !important;
 }
 .mfp-container {
   text-align: center;
