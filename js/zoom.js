@@ -4,10 +4,8 @@ $(function () {
         var _this = $(this),
             _parent = _this.parent("a");
 
-        if (_parent.length > 0) {
-            _this.attr("src", _parent.attr("href"));
+        if (_parent.length > 0) 
             _parent.addClass("pop");
-        }
 
     });
 
