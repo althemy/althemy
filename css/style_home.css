@@ -2172,7 +2172,7 @@ body .mfp-bottom-bar {
     max-width: 100%;
   }
   .mfp-arrow:before {
-    display: none;
+    /*display: none;*/
   }
 }
 @media screen and (max-width: 1000px) {
