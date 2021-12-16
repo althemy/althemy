@@ -11,7 +11,7 @@ function recalculateMasonry(width) {
 }
 
 $(document).ready(function(){
-  var imagesGallery = '<div class="gallery-grid"><div class="header_gallery"><button class="btn_gallery" id="grid_one"><i class="fas fa-stop"></i></button><button class="btn_gallery active" id="grid_two"><i class="fas fa-th-large"></i></button><button class="btn_gallery" id="grid_four"><i class="fas fa-th"></i></button></div><div class="grid">'; 
+  var imagesGallery = '<div class="gallery-grid"><div class="header_gallery"><button class="btn_gallery" id="grid_one"><i class="fas fa-stop"></i></button><button class="btn_gallery active" id="grid_two"><i class="fas fa-th-large"></i></button><button class="btn_gallery" id="grid_four"><i class="fas fa-th"></i></button></div><div class="grid">';
   var postImgs = $('.post-outer.card img');
 
   if (postImgs.length > 1) {
@@ -21,27 +21,37 @@ $(document).ready(function(){
           imgUrl = $this.attr('src'),
           imgOriginalUrl = $this.parent().attr('href'),
           hasParent = imgOriginalUrl && imgOriginalUrl.indexOf('s1600') != -1,
-          hasSeparator = hasParent && $this.parents().eq(1).hasClass('separator');
+          hasSeparator = $this.parents().eq(1).hasClass('separator');
 
       if(hasSeparator) {
-        const $separatorParent = $this.parents().eq(1);
-        $separatorParent.find('br').remove();
-        $separatorParent.remove();
+        $this.parents('.separator').next('br').remove();
+        $this.parents().eq(1).remove();
         imgUrl = imgOriginalUrl;
       } else if (hasParent) {
         $this.parent().remove();
-        $this.parent().find('br').remove();
         imgUrl = imgOriginalUrl;
       } else {
-        if ($this.parent().length) {
-          $this.parent().find('br').remove();
-        }
         $this.remove();
       }
+
+      if ($(this).parents('.separator')) {
+        const $separatorParent = $this.parents('.separator');
+        $separatorParent.next('br').remove();
+        $separatorParent.remove();
+      }
+
 
       imagesGallery += '<div class="grid-item"><a href="'+ imgUrl +'"><img src="'+ imgUrl +'"/></a></div>';
 
     });
+
+    // remove separators with br tag only
+    $('.separator').each(function(){
+      if ($(this).children().length == 1 && $(this).find('br').length == 1) {
+        $(this).remove();
+      }
+    });
+
     imagesGallery += '</div></div>';
     $('.post-outer.card').append(imagesGallery);
 
@@ -55,7 +65,7 @@ $(document).ready(function(){
     });
 
     $('.grid').magnificPopup({
-      delegate: 'a', 
+      delegate: 'a',
       type: 'image',
       gallery: {
         enabled: true
@@ -73,12 +83,12 @@ $(document).ready(function(){
 
       image: {
         markup: '<div class="mfp-figure">'+
-        '<div class="mfp-close"></div>'+
-        '<div class="mfp-img"></div>'+
-        '<div class="custom-bottom-bar">'+
-        '<div class="mfp-title"></div>'+
-        '</div>'+
-        '</div>'
+            '<div class="mfp-close"></div>'+
+            '<div class="mfp-img"></div>'+
+            '<div class="custom-bottom-bar">'+
+            '<div class="mfp-title"></div>'+
+            '</div>'+
+            '</div>'
       },
 
       callbacks: {
