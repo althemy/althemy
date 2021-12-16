@@ -33,6 +33,9 @@ $(document).ready(function(){
         $this.parent().find('br').remove();
         imgUrl = imgOriginalUrl;
       } else {
+        if ($this.parent().length) {
+          $this.parent().find('br').remove();
+        }
         $this.remove();
       }
 
