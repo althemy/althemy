@@ -29,12 +29,16 @@ $(document).ready(function(){
         $separator.remove();
         imgUrl = imgOriginalUrl;
       } else if (hasParent) {
-        $this.parent().remove();
-        $this.parent().next('br').remove();
+        const $parent = $this.parent();
+        $parent.remove();
+        $parent.next('br').remove();
+        $parent.children('br').remove();
         imgUrl = imgOriginalUrl;
       } else {
+        const $parent = $this.parent();
         $this.remove();
-        $this.parent().next('br').remove();
+        $parent.next('br').remove();
+        $parent.children('br').remove();
       }
 
       imagesGallery += '<div class="grid-item"><a href="'+ imgUrl +'"><img src="'+ imgUrl +'"/></a></div>';
