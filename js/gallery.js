@@ -21,24 +21,19 @@ $(document).ready(function(){
           imgUrl = $this.attr('src'),
           imgOriginalUrl = $this.parent().attr('href'),
           hasParent = imgOriginalUrl && imgOriginalUrl.indexOf('s1600') != -1,
-          hasSeparator = $this.parents() && $this.parents().eq(1).hasClass('separator');
+          hasSeparator = hasParent && $this.parents().eq(1).hasClass('separator');
 
       if(hasSeparator) {
-        const $separator = $this.parents().eq(1);
-        $separator.next('br').remove();
-        $separator.remove();
+        const $separatorParent = $this.parents().eq(1);
+        $separatorParent.find('br').remove();
+        $separatorParent.remove();
         imgUrl = imgOriginalUrl;
       } else if (hasParent) {
-        const $parent = $this.parent();
-        $parent.remove();
-        $parent.next('br').remove();
-        $parent.children('br').remove();
+        $this.parent().remove();
+        $this.parent().find('br').remove();
         imgUrl = imgOriginalUrl;
       } else {
-        const $parent = $this.parent();
         $this.remove();
-        $parent.next('br').remove();
-        $parent.children('br').remove();
       }
 
       imagesGallery += '<div class="grid-item"><a href="'+ imgUrl +'"><img src="'+ imgUrl +'"/></a></div>';
