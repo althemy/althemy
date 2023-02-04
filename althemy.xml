@@ -272,11 +272,11 @@ body.locked #bannerwrap .row {
                           <p>Promote your own alternative brand or sell your items with us!</p>
                         </b:if>
 
-                        <b:if cond='data:blog.searchLabel in [&quot;@Dante Heks&quot;,&quot;@Dante Heks+Photo&quot;,&quot;@Dante Heks+Blog&quot;,&quot;@Dante Heks+Video&quot;,&quot;@Dante Heks+Product&quot;]'>
-                          <h2>Dante Heks</h2>
-                          <p>http://danteheks.althemy.org</p>
-                        </b:if>
 
+                        <b:if cond='data:view.isSearch or (data:view.isLabel and data:label.name != &quot;Photo&quot; and data:label.name != &quot;Blog&quot; and data:label.name != &quot;Video&quot; and data:label.name != &quot;Product&quot;)'>
+                          <h2 class="model_title"></h2>
+                          <p class="model_description"></p>
+                        </b:if>
 
                       </div>
                     </b:if>
@@ -1048,6 +1048,7 @@ body.locked #bannerwrap .row {
       var searchLabel = &#39;&#39;;
     </b:if>
     &lt;/script&gt;
+    <script src='https://althemy.github.io/althemy/js/models_data.js' type='text/javascript'/>
     <script crossorigin='anonymous' src='https://kit.fontawesome.com/83da6e9392.js'/>
     <script src='https://code.jquery.com/jquery-3.1.1.js' type='text/javascript'/>
     <script src='https://althemy.github.io/althemy/js/jquery.imagesloaded.min.js' type='text/javascript'/>
