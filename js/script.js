@@ -786,9 +786,9 @@ $(function () {
             searchTerm = searchTerm.toLowerCase().replace(/\s/g, '_').replace('+', '_');
         } else {
             // get the label search term
-            const startIndex = currentUrl.indexOf("/label/") + "/label/".length;
-            const endIndex = currentUrl.indexOf("?");
-            let searchTerm = currentUrl.substring(startIndex, endIndex);
+            const startIndex = url.indexOf("/label/") + "/label/".length;
+            const endIndex = url.indexOf("?");
+            let searchTerm = url.substring(startIndex, endIndex);
             searchTerm = searchTerm.toLowerCase().replace(/\s/g, '_').replace('+', '_').replace('@', '');
         }
         if (models_data[searchTerm]) {
