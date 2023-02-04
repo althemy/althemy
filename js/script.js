@@ -800,8 +800,8 @@ $(function () {
 
             if (isLabelPage) {
                 let author_thumb = "https://raw.githubusercontent.com/althemy/althemy/master/images/authors/" + searchTerm + ".jpg";
-                $("img.model_author_image").src(author_thumb);
-                $("span.model_author_title").src(model_data.title);
+                $("img.model_author_image").attr('src', author_thumb);
+                $("span.model_author_title").text(model_data.title);
             }
         }
     }
