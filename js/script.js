@@ -782,13 +782,13 @@ $(function () {
     if (isSearchPage || isLabelPage) {
         let searchTerm = "";
         if (isSearchPage) {
-            let searchTerm = decodeURIComponent(url.split('q=')[1].split('&')[0]);
+            searchTerm = decodeURIComponent(url.split('q=')[1].split('&')[0]);
             searchTerm = searchTerm.toLowerCase().replace(' ', '_').replace('%20', '_').replace('+', '_');
         } else {
             // get the label search term
             const startIndex = url.indexOf("/label/") + "/label/".length;
             const endIndex = url.indexOf("?");
-            let searchTerm = url.substring(startIndex, endIndex);
+            searchTerm = url.substring(startIndex, endIndex);
             searchTerm = searchTerm.toLowerCase().replace('%20', '_').replace(' ', '_').replace('+', '_').replace('@', '');
         }
         if (models_data[searchTerm]) {
