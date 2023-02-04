@@ -127,6 +127,7 @@ body.right .container {
 .grid_twelve {
   width: 100%;
   float: left;
+  min-height: 400px;
 }
 .zenlast {
   float: right;
