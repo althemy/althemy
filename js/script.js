@@ -786,7 +786,6 @@ $(function () {
             $(".g_list h2.model_title").text(model_data.title);
             $(".g_list p.model_description").text(model_data.description);
             let cover_image = "https://raw.githubusercontent.com/althemy/althemy/master/images/covers/" + searchTerm + ".jpg";
-            console.log(cover_image);
             $(".foa_bg").css("background-image", "url('" + cover_image + "')");
         }
     }

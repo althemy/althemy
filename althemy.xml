@@ -1048,13 +1048,13 @@ body.locked #bannerwrap .row {
       var searchLabel = &#39;&#39;;
     </b:if>
     &lt;/script&gt;
-    <script src='https://althemy.github.io/althemy/js/models_data.js' type='text/javascript'/>
+    <script src='https://althemy.github.io/althemy/js/models_data.js?v=1.0.01' type='text/javascript'/>
     <script crossorigin='anonymous' src='https://kit.fontawesome.com/83da6e9392.js'/>
     <script src='https://code.jquery.com/jquery-3.1.1.js' type='text/javascript'/>
     <script src='https://althemy.github.io/althemy/js/jquery.imagesloaded.min.js' type='text/javascript'/>
     <script src='https://althemy.github.io/althemy/js/masonry.pkgd.js' type='text/javascript'/>
     <script src='https://althemy.github.io/althemy/js/jQueryZoom.min.js'/>    
-    <script src='https://althemy.github.io/althemy/js/script.js' type='text/javascript'/>
+    <script src='https://althemy.github.io/althemy/js/script.js?v=1.0.01' type='text/javascript'/>
     <b:if cond='data:view.isSingleItem'>
       <b:if cond='data:view.description == &quot;gallery&quot;'>
        <script src='https://althemy.github.io/althemy/js/gallery.js?v1.00.006' type='text/javascript'/>
