@@ -778,15 +778,22 @@ $(function () {
     // pull model cover image, title, description on search pages for search terms containing model names
     let url = window.location.href;
     let isSearchPage = url.indexOf('/search') !== -1 && url.indexOf('q=') !== -1;
-    if (isSearchPage) {
+    let isLabelPage = url.indexOf("/search/label/") !== -1;
+    if (isSearchPage || isLabelPage) {
         let searchTerm = decodeURIComponent(url.split('q=')[1].split('&')[0]);
-        searchTerm = searchTerm.toLowerCase().replace(/\s/g, '_').replace('+', '_');
+        searchTerm = searchTerm.toLowerCase().replace(/\s/g, '_').replace('+', '_').replace('@', '');
         if (models_data[searchTerm]) {
             let model_data = models_data[searchTerm];
             $(".g_list h2.model_title").text(model_data.title);
             $(".g_list p.model_description").text(model_data.description);
             let cover_image = "https://raw.githubusercontent.com/althemy/althemy/master/images/covers/" + searchTerm + ".jpg";
             $(".foa_bg").css("background-image", "url('" + cover_image + "')");
+
+            if (isLabelPage) {
+                let author_thumb = "https://raw.githubusercontent.com/althemy/althemy/master/images/authors/" + searchTerm + ".jpg";
+                $("img.model_author_image").src(author_thumb);
+                $("span.model_author_title").src(model_data.title);
+            }
         }
     }
 });
