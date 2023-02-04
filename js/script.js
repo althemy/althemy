@@ -780,8 +780,17 @@ $(function () {
     let isSearchPage = url.indexOf('/search') !== -1 && url.indexOf('q=') !== -1;
     let isLabelPage = url.indexOf("/search/label/") !== -1;
     if (isSearchPage || isLabelPage) {
-        let searchTerm = decodeURIComponent(url.split('q=')[1].split('&')[0]);
-        searchTerm = searchTerm.toLowerCase().replace(/\s/g, '_').replace('+', '_').replace('@', '');
+        let searchTerm = "";
+        if (isSearchPage) {
+            let searchTerm = decodeURIComponent(url.split('q=')[1].split('&')[0]);
+            searchTerm = searchTerm.toLowerCase().replace(/\s/g, '_').replace('+', '_');
+        } else {
+            // get the label search term
+            const startIndex = currentUrl.indexOf("/label/") + "/label/".length;
+            const endIndex = currentUrl.indexOf("?");
+            let searchTerm = currentUrl.substring(startIndex, endIndex);
+            searchTerm = searchTerm.toLowerCase().replace(/\s/g, '_').replace('+', '_').replace('@', '');
+        }
         if (models_data[searchTerm]) {
             let model_data = models_data[searchTerm];
             $(".g_list h2.model_title").text(model_data.title);
