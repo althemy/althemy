@@ -780,7 +780,7 @@ $(function () {
     let isSearchPage = url.indexOf('/search') !== -1 && url.indexOf('q=') !== -1;
     if (isSearchPage) {
         let searchTerm = decodeURIComponent(url.split('q=')[1].split('&')[0]);
-        searchTerm = searchTerm.toLowerCase().replace(/\s/g, '_');
+        searchTerm = searchTerm.toLowerCase().replace(/\s/g, '_').replace('+', '_');
         if (models_data[searchTerm]) {
             let model_data = models_data[searchTerm];
             $(".g_list h2.model_title").text(model_data.title);
