@@ -746,7 +746,7 @@ function renderModelAuthorDataOnListingPages() {
             if (searchTerm != "" && models_data[searchTerm]) {
                 let author_thumb = "https://raw.githubusercontent.com/althemy/althemy/master/images/authors/" + searchTerm + ".jpg";
                 $("img.model_author_image").attr('src', author_thumb);
-                $("span.model_author_title").text(model_datas_data[searchTerm].title);
+                $("span.model_author_title").text(models_data[searchTerm].title);
             }
         });
     }
