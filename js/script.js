@@ -717,8 +717,9 @@ function getAuthorNameFromLabelPageUrl(label_page_url) {
     }
     const endIndex = label_page_url.indexOf("?");
     let searchTerm = label_page_url.substring(startIndex, endIndex);
-    searchTerm.toLowerCase().replace('%20', '_').replace(' ', '_').replace('+', '_');
+    searchTerm.toLowerCase().replace('%20', '_').replace(' ', '_');
     let excludePostFixes = ["+photo", "+blog", "+video", "+product"];
+    searchTerm = searchTerm.replace('+', '_');
     for (let i = 0; i < excludePostFixes.length; i++) {
         let postfix = excludePostFixes[i];
         if (searchTerm.indexOf(postfix) !== -1 && searchTerm.endsWith(postfix)) {
@@ -735,7 +736,7 @@ function renderModelCoverDataOnSearchPagesForModelSearchTerms() {
     let isSearchPage = url.indexOf('/search') !== -1 && url.indexOf('q=') !== -1;
     if (isSearchPage) {
         let searchTerm = decodeURIComponent(url.split('q=')[1].split('&')[0]);
-        searchTerm = searchTerm.toLowerCase().replace(' ', '_').replace('%20', '_').replace('+', '_');
+        searchTerm = searchTerm.toLowerCase().replace(' ', '_').replace('%20', '_');
 
         let excludePostFixes = ["+label:photo", "+label:blog", "+label:video", "+label:product"];
         for (let i = 0; i < excludePostFixes.length; i++) {
@@ -745,6 +746,7 @@ function renderModelCoverDataOnSearchPagesForModelSearchTerms() {
             }
         }
 
+        searchTerm = searchTerm.replace('+', '_');
         if (models_data[searchTerm]) {
             let model_data = models_data[searchTerm];
             $(".g_list h2.model_title").text(model_data.title);
