@@ -717,7 +717,7 @@ function getAuthorNameFromLabelPageUrl(label_page_url) {
     }
     const endIndex = label_page_url.indexOf("?");
     let searchTerm = label_page_url.substring(startIndex, endIndex);
-    searchTerm.toLowerCase().replace('%20', '_').replace(' ', '_');
+    searchTerm = searchTerm.toLowerCase().replace('%20', '_').replace(' ', '_');
     let excludePostFixes = ["+photo", "+blog", "+video", "+product"];
     searchTerm = searchTerm.replace('+', '_');
     for (let i = 0; i < excludePostFixes.length; i++) {
