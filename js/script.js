@@ -709,6 +709,49 @@ function blogStats(e) {
     })
 }
 
+function getAuthorNameFromLabelPageUrl(label_page_url) {
+    // get the label search term
+    const startIndex = label_page_url.indexOf("/label/@") + "/label/@".length;
+    if (startIndex < 1) {
+        return '';
+    }
+    const endIndex = label_page_url.indexOf("?");
+    let searchTerm = label_page_url.substring(startIndex, endIndex);
+    return searchTerm.toLowerCase().replace('%20', '_').replace(' ', '_').replace('+', '_');
+}
+
+function renderModelCoverDataOnSearchPagesForModelSearchTerms() {
+    // pull model cover image, title, description on search pages for search terms containing model names
+    let url = window.location.href;
+    let isSearchPage = url.indexOf('/search') !== -1 && url.indexOf('q=') !== -1;
+    if (isSearchPage) {
+        let searchTerm = decodeURIComponent(url.split('q=')[1].split('&')[0]);
+        searchTerm = searchTerm.toLowerCase().replace(' ', '_').replace('%20', '_').replace('+', '_');
+        if (models_data[searchTerm]) {
+            let model_data = models_data[searchTerm];
+            $(".g_list h2.model_title").text(model_data.title);
+            $(".g_list p.model_description").text(model_data.description);
+            let cover_image = "https://raw.githubusercontent.com/althemy/althemy/master/images/covers/" + searchTerm + ".jpg";
+            $(".foa_bg").css("background-image", "url('" + cover_image + "')");
+        }
+    }
+}
+
+function renderModelAuthorDataOnListingPages() {
+    if (!$('body').hasClass('item') && !$('body').hasClass('static_page')) {
+        $(".author_wrapper").each(function () {
+            const $this = $(this);
+            const searchTerm = getAuthorNameFromLabelPageUrl($this.attr('href'));
+
+            if (searchTerm != "" && models_data[searchTerm]) {
+                let author_thumb = "https://raw.githubusercontent.com/althemy/althemy/master/images/authors/" + searchTerm + ".jpg";
+                $("img.model_author_image").attr('src', author_thumb);
+                $("span.model_author_title").text(model_data.title);
+            }
+        });
+    }
+}
+
 var html = "", entriesLength = 0, IDs = [], scrolled = 0, labelsComb = [], labelsCombLength = labelsComb.length,
     elements_clicked = [];
 jQuery(document).ready(function () {
@@ -774,35 +817,7 @@ $(function () {
         0 < o.length && o.orThemesZoom(), 0 < m.length && m.orThemesZoom()
     }, 200);
 
+    renderModelCoverDataOnSearchPagesForModelSearchTerms();
+    renderModelAuthorDataOnListingPages();
 
-    // pull model cover image, title, description on search pages for search terms containing model names
-    let url = window.location.href;
-    let isSearchPage = url.indexOf('/search') !== -1 && url.indexOf('q=') !== -1;
-    let isLabelPage = url.indexOf("/search/label/") !== -1;
-    if (isSearchPage || isLabelPage) {
-        let searchTerm = "";
-        if (isSearchPage) {
-            searchTerm = decodeURIComponent(url.split('q=')[1].split('&')[0]);
-            searchTerm = searchTerm.toLowerCase().replace(' ', '_').replace('%20', '_').replace('+', '_');
-        } else {
-            // get the label search term
-            const startIndex = url.indexOf("/label/") + "/label/".length;
-            const endIndex = url.indexOf("?");
-            searchTerm = url.substring(startIndex, endIndex);
-            searchTerm = searchTerm.toLowerCase().replace('%20', '_').replace(' ', '_').replace('+', '_').replace('@', '');
-        }
-        if (models_data[searchTerm]) {
-            let model_data = models_data[searchTerm];
-            $(".g_list h2.model_title").text(model_data.title);
-            $(".g_list p.model_description").text(model_data.description);
-            let cover_image = "https://raw.githubusercontent.com/althemy/althemy/master/images/covers/" + searchTerm + ".jpg";
-            $(".foa_bg").css("background-image", "url('" + cover_image + "')");
-
-            if (isLabelPage) {
-                let author_thumb = "https://raw.githubusercontent.com/althemy/althemy/master/images/authors/" + searchTerm + ".jpg";
-                $("img.model_author_image").attr('src', author_thumb);
-                $("span.model_author_title").text(model_data.title);
-            }
-        }
-    }
 });

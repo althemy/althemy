@@ -69,7 +69,7 @@ body.locked #bannerwrap .row {
     </b:if>
 
   </head>
-  <body>
+  <body expr:class="data:blog.pageType">
 
 
     <div class='fullwrap togglemenu'>
@@ -459,7 +459,7 @@ body.locked #bannerwrap .row {
                                           <div class='column grid_twelve mfp-prevent-close'>
                                             <div class='zencategory element1 firstitem mfp-prevent-close'>
                                               <div class='sitelink mfp-prevent-close'>
-                                                <a class='mfp-prevent-close' expr:href='&quot;/search/label/&quot; + data:post.labels[0].name + &quot;?max-results=25#filters&quot;'>
+                                                <a class='mfp-prevent-close author_wrapper' expr:href='&quot;/search/label/&quot; + data:post.labels[0].name + &quot;?max-results=25#filters&quot;'>
                                                   <b:with value='data:post.authorPhoto.url ?: &quot;https://althemy.github.io/althemy/images/elements/anonymous-Icon.jpg&quot;' var='image'>
                                                     <img class='mfp-prevent-close model_author_image' expr:src='data:image'/>
                                                   </b:with>
@@ -1054,7 +1054,7 @@ body.locked #bannerwrap .row {
     <script src='https://althemy.github.io/althemy/js/jquery.imagesloaded.min.js' type='text/javascript'/>
     <script src='https://althemy.github.io/althemy/js/masonry.pkgd.js' type='text/javascript'/>
     <script src='https://althemy.github.io/althemy/js/jQueryZoom.min.js'/>    
-    <script src='https://althemy.github.io/althemy/js/script.js?v=1.0.11' type='text/javascript'/>
+    <script src='https://althemy.github.io/althemy/js/script.js?v=1.0.13' type='text/javascript'/>
     <b:if cond='data:view.isSingleItem'>
       <b:if cond='data:view.description == &quot;gallery&quot;'>
        <script src='https://althemy.github.io/althemy/js/gallery.js?v1.0.11' type='text/javascript'/>
