@@ -755,6 +755,16 @@ function renderModelCoverDataOnSearchPagesForModelSearchTerms() {
             $(".foa_bg").css("background-image", "url('" + cover_image + "')");
         }
     }
+
+
+    let searchTerm = getAuthorNameFromLabelPageUrl(window.location.href);
+    if (searchTerm != "" && models_data[searchTerm]) {
+        let model_data = models_data[searchTerm];
+        $(".g_list h2.model_title").text(model_data.title);
+        $(".g_list p.model_description").text(model_data.description);
+        let cover_image = "https://raw.githubusercontent.com/althemy/althemy/master/images/covers/" + searchTerm + ".jpg";
+        $(".foa_bg").css("background-image", "url('" + cover_image + "')");
+    }
 }
 
 function renderModelAuthorDataOnListingPages() {
@@ -765,8 +775,8 @@ function renderModelAuthorDataOnListingPages() {
 
             if (searchTerm != "" && models_data[searchTerm]) {
                 let author_thumb = "https://raw.githubusercontent.com/althemy/althemy/master/images/authors/" + searchTerm + ".jpg";
-                $("img.model_author_image").attr('src', author_thumb);
-                $("span.model_author_title").text(models_data[searchTerm].title);
+                $this.find("img.model_author_image").attr('src', author_thumb);
+                $this.find("span.model_author_title").text(models_data[searchTerm].title);
             }
         });
     }
