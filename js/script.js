@@ -838,6 +838,6 @@ $(function () {
     }, 200);
 
     renderModelCoverDataOnSearchPagesForModelSearchTerms();
-    renderModelAuthorDataOnListingPages();
+    // renderModelAuthorDataOnListingPages();
 
 });
