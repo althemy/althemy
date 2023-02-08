@@ -966,6 +966,9 @@ ul#filters {
 .leading_foa .g_list p {
   color: #fff;
 }
+.leading_foa p.model_description {
+  display: block !important;
+}
 #left {
   margin-left: 9%;
 }
