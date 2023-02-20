@@ -69,7 +69,7 @@ body.locked #bannerwrap .row {
     </b:if>
 
   </head>
-  <body expr:class="data:blog.pageType">
+  <body expr:class='data:blog.pageType'>
 
 
     <div class='fullwrap togglemenu'>
@@ -274,8 +274,8 @@ body.locked #bannerwrap .row {
 
 
                         <b:if cond='data:view.isSearch or (data:view.isLabel and data:label.name != &quot;Photo&quot; and data:label.name != &quot;Blog&quot; and data:label.name != &quot;Video&quot; and data:label.name != &quot;Product&quot;)'>
-                          <h2 class="model_title"></h2>
-                          <p class="model_description"></p>
+                          <h2 class='model_title'/>
+                          <p class='model_description'/>
                         </b:if>
 
                       </div>
@@ -348,7 +348,6 @@ body.locked #bannerwrap .row {
                                 <b:widget-setting name='showCommentLink'>true</b:widget-setting>
                                 <b:widget-setting name='style.urlcolor'>#008000</b:widget-setting>
                                 <b:widget-setting name='showAuthor'>true</b:widget-setting>
-                                <b:widget-setting name='disableGooglePlusShare'>true</b:widget-setting>
                                 <b:widget-setting name='style.linkcolor'>#0000ff</b:widget-setting>
                                 <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
                                 <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
@@ -463,7 +462,7 @@ body.locked #bannerwrap .row {
                                                   <b:with value='data:post.authorPhoto.url ?: &quot;https://althemy.github.io/althemy/images/elements/anonymous-Icon.jpg&quot;' var='image'>
                                                     <img class='mfp-prevent-close model_author_image' expr:src='data:image'/>
                                                   </b:with>
-                                                  <span class="model_author_title"><data:post.author/></span>
+                                                  <span class='model_author_title'><data:post.author/></span>
                                                 </a>
                                               </div>
                                             </div>
