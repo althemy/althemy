@@ -15,6 +15,10 @@ let models_data = {
         "title": "Psychara",
         "description": "https://psychara.althemy.org",
     },
+    "tenshi": {
+        "title": "Tenshi",
+        "description": "https://tenshi.althemy.org",
+    },
     "eleine": {
         "title": "Eleine",
         "description": "https://eleine.althemy.org",
