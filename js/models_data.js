@@ -25,7 +25,7 @@ let models_data = {
     },
     "ferasha": {
         "title": "Ferasha",
-        "description": "<a href="#" class="fa fa-facebook"></a>",
+        "description": "x",
     },
     "wiccana": {
         "title": "Wiccana",
