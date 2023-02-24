@@ -22,7 +22,7 @@ let models_data = {
     "eleine": {
         "title": "Eleine",
         "description": "https://eleine.althemy.org",
-    }
+    },
     "ferasha": {
         "title": "Ferasha",
         "description": "https://ferashacosplay.althemy.com",
