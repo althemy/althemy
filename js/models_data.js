@@ -1,5 +1,5 @@
 let models_data = {
-    // Users with = URL + Cover + Avatar
+    
     "dante_heks": {
         "title": "Dante Heks",
         "description": "https://danteheks.althemy.com",
@@ -68,6 +68,5 @@ let models_data = {
         "title": "Magda Corvinus",
         "description": "https://magdacorvinus.althemy.com",
     }
-    // Users with = Cover + Avatar
-    // Users with =  Avatar
+
 }
