@@ -26,6 +26,7 @@ let models_data = {
     "ferasha": {
         "title": "Ferasha",
         "description": "https://ferashacosplay.althemy.com",
+        "description": "https://ferashacosplay.althemy.com",
     },
     "wiccana": {
         "title": "Wiccana",
